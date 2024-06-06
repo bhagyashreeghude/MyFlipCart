@@ -1,0 +1,1 @@
+export const LOGO_IMG = "https://plus.unsplash.com/premium_photo-1670462145715-c32d0c91e81b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fHNob3BwaW5nJTIwY2FydCUyMGluJTIwYmx1ZXxlbnwwfHwwfHx8MA%3D%3D"
