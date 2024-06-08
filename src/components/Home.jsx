@@ -1,5 +1,6 @@
 import MainComponent from "./MainComponent"
-
+import Services from "./Services"
+import Trusted from "./Trusted"
 
 const Home = ({myData}) => {
   const data={
@@ -8,6 +9,8 @@ const Home = ({myData}) => {
   return (
     <div>
       <MainComponent myData={data}/>
+      <Services/>
+      <Trusted/>
     </div>
   )
 }
