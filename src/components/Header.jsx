@@ -5,11 +5,11 @@ const Header = () => {
   return (
     <>
     <Navbar/>
-    <div className="absolute">
-    \
+    {/* <div className="absolute"> */}
+    {/* \ */}
     
  
-    </div>
+    {/* </div> */}
        </>
   )
 }

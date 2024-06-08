@@ -1,8 +1,14 @@
+import MainComponent from "./MainComponent"
 
 
-const Home = () => {
+const Home = ({myData}) => {
+  const data={
+    name:"Shree E-Commerce"
+  }
   return (
-    <div></div>
+    <div>
+      <MainComponent myData={data}/>
+    </div>
   )
 }
 

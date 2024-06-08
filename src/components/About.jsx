@@ -1,7 +1,10 @@
-
-const About = () => {
+import MainComponent from "./MainComponent"
+const About = ({myData}) => {
+  const data = {
+    name:"Shree Store"
+  }
   return (
-    <div >About</div>
+    <div ><MainComponent myData={data}/></div>
   )
 }
 
