@@ -3,8 +3,21 @@ import { FaInstagram } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className="bg-gray-900 text-white h-72 w-full flex items-center ">
-      <div className="grid grid-cols-4 gap-3   p-2 w-[75%]">
+    <div className="bg-gray-900 text-white h-[70%] w-full ">
+      <div className="relative h-28 w-full">
+        <div className="bg-white text-black  w-[70%] h-28 rounded-xl p-4 mx-44  absolute top-[-3.5rem] grid grid-cols-6 border border-black mb-15">
+          <div className="col-span-5">
+            <h3 className="text-2xl">Ready to get started ?</h3>
+            <h3>Talk to us today</h3>
+          </div>
+
+          <button className="bg-blue-600 hover:bg-blue-400 h-14 col-span-1">
+            GET STARTED
+          </button>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-4 gap-3 p-2 w-[75%] pb-10 pt-0 mx-60">
         <div className="col-span-1">
           <h4>Shree Store</h4>
           <p className="mt-4">
@@ -28,8 +41,13 @@ const Footer = () => {
         </div>
         <div>
           <h4>Call Us</h4>
-          <p className="mt-4">+91 1234567890</p>
+          <p className="mt-4"><a href="tel:">+91 1234567890</a></p>
         </div>
+      </div>
+      <hr></hr>
+      <div className="grid grid-cols-6 mt-10">
+        <p className="col-start-2">@{new Date().getFullYear()} ShreeStore.All Rights Reserved</p>
+        <p className="col-start-5 ">PRIVACY POLICY TERMS & CONDITIONS</p>
       </div>
     </div>
   );

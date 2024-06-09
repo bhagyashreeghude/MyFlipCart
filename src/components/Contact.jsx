@@ -11,7 +11,7 @@ const Contact = () => {
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
-      <div className="w-full">
+      <div className="w-full h-96">
         <form
           action="https://formspree.io/f/xwkggebd"
           method="POST"
