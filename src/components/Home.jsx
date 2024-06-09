@@ -1,4 +1,4 @@
-import Footer from "./Footer"
+
 import MainComponent from "./MainComponent"
 import Services from "./Services"
 import Trusted from "./Trusted"
@@ -12,7 +12,7 @@ const Home = ({myData}) => {
       <MainComponent myData={data}/>
       <Services/>
       <Trusted/>
-      <Footer/>
+      
     </div>
   )
 }

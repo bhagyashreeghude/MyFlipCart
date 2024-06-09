@@ -6,6 +6,7 @@ import Cart from "./components/Cart";
 import Contact from "./components/Contact";
 import Products from "./components/Products";
 import SingleProduct from "./components/SingleProduct";
+import Footer from "./components/Footer";
 function App() {
   return (
     <>
@@ -20,7 +21,9 @@ function App() {
             <Route path="/singleproduct/:id" element={<SingleProduct/>} />
             <Route path="/cart" element={<Cart/>} />
             <Route path="/about" element={<About/>} />
+            
         </Routes>
+        <Footer/>
       </BrowserRouter>
 
     </>

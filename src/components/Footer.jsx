@@ -3,8 +3,8 @@ import { FaInstagram } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className="bg-gray-900 text-white h-72 w-full">
-      <div className="grid grid-cols-4 gap-3 mx-48   p-2 w-[75%]">
+    <div className="bg-gray-900 text-white h-72 w-full flex items-center ">
+      <div className="grid grid-cols-4 gap-3   p-2 w-[75%]">
         <div className="col-span-1">
           <h4>Shree Store</h4>
           <p className="mt-4">
