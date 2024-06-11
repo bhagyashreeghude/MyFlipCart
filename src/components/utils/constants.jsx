@@ -11,3 +11,5 @@ export const TRUSTED_IMG_3="https://cdn.vectorstock.com/i/500p/38/07/triangle-or
 export const TRUSTED_IMG_4="https://cdn.vectorstock.com/i/500p/59/52/logo-logic-squirrel-mascot-cartoon-style-vector-39685952.avif"
 
 export const TRUSTED_IMG_5="https://cdn.vectorstock.com/i/500p/82/76/mind-logic-creative-logo-design-vector-17338276.avif"
+
+export const ERROR_PAGE_IMG="https://media.istockphoto.com/id/1330198451/vector/404-page-not-found-vector-template-with-crying-pinguin.jpg?s=612x612&w=0&k=20&c=dsuMXxVyURPXZxoSj0IL0cFbrsypFlF0ydVOCblgmGk="

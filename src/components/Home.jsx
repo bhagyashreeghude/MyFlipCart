@@ -12,6 +12,7 @@ const Home = ({myData}) => {
       <MainComponent myData={data}/>
       <Services/>
       <Trusted/>
+      <parent />
       
     </div>
   )

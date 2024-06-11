@@ -1,4 +1,10 @@
-const Contact = () => {
+import Button from "./Button";
+
+const Contact = ({ myBtn }) => {
+  const btn = {
+    btnName: "Go Back to out",
+  };
+  // console.log(btn.btnName);
   return (
     <div>
       <h2 className="text-3xl text-center m-2 p-2">Contact Page</h2>
@@ -15,7 +21,7 @@ const Contact = () => {
         <form
           action="https://formspree.io/f/xwkggebd"
           method="POST"
-          className="cursor-pointer object-center grid grid-rows-2 gap-4  mx-[34rem] m-4 w-80" 
+          className="cursor-pointer object-center grid grid-rows-2 gap-4  mx-[34rem] m-4 w-80"
         >
           <input
             type="text"
@@ -35,8 +41,13 @@ const Contact = () => {
             name="Message"
             className="border border-black rounded-lg"
           ></textarea>
-          <input type="submit" value="Send" className="bg-blue-600 hover:bg-blue-400 p-2 m-2 rounded-lg w-[25%]" ></input>
+          <input
+            type="submit"
+            value="Send"
+            className="bg-blue-600 hover:bg-blue-400 p-2 m-2 rounded-lg w-[25%]"
+          ></input>
         </form>
+       
       </div>
     </div>
   );

@@ -1,7 +1,11 @@
 import { RiYoutubeLine } from "react-icons/ri";
 import { FaInstagram } from "react-icons/fa6";
+import Button from "./Button"
+const Footer = ({myBtn}) => {
+  const btn ={
+    btnName:"Get Started"
+  }
 
-const Footer = () => {
   return (
     <div className="bg-gray-900 text-white h-[70%] w-full ">
       <div className="relative h-28 w-full">
@@ -10,10 +14,11 @@ const Footer = () => {
             <h3 className="text-2xl">Ready to get started ?</h3>
             <h3>Talk to us today</h3>
           </div>
+          <Button myBtn={btn} className="w-[25%] rounded-lg" />
 
-          <button className="bg-blue-600 hover:bg-blue-400 h-14 col-span-1">
+          {/* <button className="bg-blue-600 hover:bg-blue-400 h-14 col-span-1">
             GET STARTED
-          </button>
+          </button> */}
         </div>
       </div>
 

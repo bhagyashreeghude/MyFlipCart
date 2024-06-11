@@ -1,7 +1,7 @@
 import { SHOPPING_IMG } from "./utils/constants";
 
-const MainComponent = ({myData}) => { 
-  const {name}  = myData
+const MainComponent = (props) => { 
+  const {name}  = props
   return (
     <div>
       <div className="lg:flex lg:flex-row lg:w-[75%] lg:ml-40 lg:my-10 border-8 border-solid 
