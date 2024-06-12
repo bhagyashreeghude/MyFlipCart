@@ -1,14 +1,20 @@
 // import { createSlice } from "@reduxjs/toolkit";
 
-// const UserSlice = createSlice({
-//     name:"users",
-//     initialState:[
+// const userSlice = createSlice({
+//   name: "user",
+//   initialState: {
+//     isMenuOpen: false,
+//     isLoading: false,
+//     isError: false,
+//   },
+//   reducers: {
+//     MenuOpen: (state) => {
+//       state.isMenuOpen = !state.isMenuOpen;
+//     },
+//     featureProducts: (state) => {
 
-//     ],
-//     reducers:{
-//         isMenuOpen(state,action){
-
-//         }
-//     }
-
-// })
+//     },
+//   },
+// });
+// export const { MenuOpen } = userSlice.actions;
+// export default userSlice.reducer;
