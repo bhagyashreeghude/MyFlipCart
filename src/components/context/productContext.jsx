@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useReducer } from "react";
 // import { PRODUCTS_API } from "../utils/constants"
 import axios from "axios";
-import reducer from "../../components/reducer/productorReducer"
+import reducer from "../reducer/productReducer"
 const AppContext = createContext();
 
 const API = "https://api.pujakaitem.com/api/products";
@@ -13,6 +13,7 @@ const initialState = {
   featureProducts: [],
 };
 
+// eslint-disable-next-line react/prop-types
 const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 

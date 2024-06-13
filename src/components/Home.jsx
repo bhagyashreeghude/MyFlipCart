@@ -1,4 +1,5 @@
 
+import FeatureProduct from "./FeatureProduct"
 import MainComponent from "./MainComponent"
 import Services from "./Services"
 import Trusted from "./Trusted"
@@ -10,6 +11,7 @@ const Home = ({myData}) => {
   return (
     <div>
       <MainComponent myData={data}/>
+      <FeatureProduct />
       <Services/>
       <Trusted/>
       <parent />
