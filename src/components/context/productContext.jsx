@@ -11,6 +11,8 @@ const initialState = {
   isError: false,
   products: [],
   featureProducts: [],
+  isSingleLoading:false,
+  singleProduct :{},
 };
 
 // eslint-disable-next-line react/prop-types
@@ -28,12 +30,27 @@ const AppProvider = ({ children }) => {
       dispatch({ type: "API_ERROR" });
     }
   };
+  //my 2nd api call for single product
+  const getSingleProduct =async(url)=>{
+    dispatch({type:"SET_SINGLE_LOADING"})
+    try {
+      const result = await axios.get(url);
+      console.log(result);
+      const singleProduct = await result.data;
+      dispatch({ type: "SET_SINGLE_PRODUCT_API", payload:  singleProduct });
+    } catch (error){
+      dispatch({type:"SET_SINGLE_ERROR"})
+    }
+
+  }
+
+    
   useEffect(() => {
     getProducts(API);
   }, []);
 
   return (
-    <AppContext.Provider value={{ ...state }}>{children}</AppContext.Provider>
+    <AppContext.Provider value={{ ...state,getSingleProduct }}>{children}</AppContext.Provider>
   );
 };
 const useProductContext = () => {
