@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Cart from "./components/Cart";
 import Contact from "./components/Contact";
-import Products from "./components/Products";
+import Product from "./components/Product"
 import SingleProduct from "./components/SingleProduct";
 import Footer from "./components/Footer";
 import ErrorPage from "./components/ErrorPage";
@@ -18,7 +18,7 @@ function App() {
           <Route path="/" element={<Home/>}/>
           {/* <Route path="/header" element={<Header/>}/> */}
             <Route path="/contact" element={<Contact/>} />
-            <Route path="/products" element={<Products/>} />
+            <Route path="/product" element={<Product/>} />
             <Route path="/singleproduct/:id" element={<SingleProduct/>} />
             <Route path="/cart" element={<Cart/>} />
             <Route path="/about" element={<About/>} />

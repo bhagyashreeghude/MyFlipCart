@@ -4,10 +4,10 @@ import { GiReceiveMoney } from "react-icons/gi";
 
 const Services = () => {
   return (
-    <div className="  ">
+    <div className=" h-72 ">
       <p className="lg:text-3xl lg:ml-40 m-6 text-xl ml-10">Our Feature Services</p>
 
-      <div className="lg:ml-40 lg:my-10  lg:grid lg:grid-cols-3 lg:gap-2 lg:w-[75%] 
+      <div className="lg:ml-40 lg:my-10  lg:grid lg:grid-cols-3 lg:gap-2 lg:w-[75%]  items-center
                       grid grid-cols-3 gap-2 m-6 ml-10">
         <div className="col-span-1 bg-gray-200 lg:p-2 rounded-full border border-black mb-2">
           <TbTruckDelivery className="lg:ml-40 ml-16" size={40} />
